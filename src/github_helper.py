@@ -10,8 +10,6 @@ def get_repo():
 
     github = Github(token)
 
-    repo = github.get_repo(
+    return github.get_repo(
         os.getenv("REPO_NAME")
     )
-
-    return repo

@@ -1,15 +1,23 @@
-from remediation_agent import RemediationAgent
+from remediation_agent import (
+    RemediationAgent
+)
+
 import json
 
 agent = RemediationAgent()
 
-incident, config, changes, pr_url = agent.execute()
+incident, config, changes, pr_url = (
+    agent.execute()
+)
 
-print("\n====================")
+print("\n========================")
 print("INCIDENT PROCESSED")
-print("====================")
+print("========================")
 
-print(f"\nIncident ID: {incident['incidentId']}")
+print(
+    f"\nIncident ID: "
+    f"{incident['incidentId']}"
+)
 
 print("\nChanges Applied:")
 

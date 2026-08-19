@@ -1,14 +1,14 @@
 {
     "incidentId": "INC1001",
-    "application": "POD5",
+    "application": "POD6",
     "rootCause": "API timeout",
     "resolvedBy": "Support Team",
     "configFile": "configs/appsettings.json",
     "changes": [
         {
             "parameter": "RequestTimeout",
-            "oldValue": 30,
-            "newValue": 60
+            "oldValue": 60,
+            "newValue": 120
         }
     ]
 }
